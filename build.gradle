@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'com.it'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.testng:testng:7.4.0'
+    implementation 'org.seleniumhq.selenium:selenium-server:4.0.0-alpha-2'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.0.2'
+    implementation 'org.jetbrains:annotations:22.0.0'
+}
+
+test {
+    useJUnitPlatform()
+}
